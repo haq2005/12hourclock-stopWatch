@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project_Clock</title>
+	<link rel="stylesheet" type="text/css" href="reminder.css">
+	<meta charset="utf-8">
+   <!--   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+<body>
+	<center><h1 class="heading">Clock Now!</h1></center>
+	<center>
+		<table class="time">
+			<tr><th>Hour</th>
+			<th>Minutes</th>
+			<th>seconds</th>
+		<th>Latin ante meridiem</th>
+	</tr>
+			<tr>
+				<td id="hour">00</td>
+				<td id="Minutes">00</td>
+				<td id="seconds">00</td>
+				<td id="latin">--</td>
+			</tr>
+		</table>
+	</center>
+<!--clocker-->
+	<center>
+		<h1 class="heading">Timer</h1>
+		<table class="timer">
+			<tr><th>minutes</th>
+			<th>seconds</th>
+			<th>Milli-seconds</th>
+	</tr>
+			<tr>
+				
+				<td id="Minute">00</td>
+				<td id="second">00</td>
+				<td id="milli">00</td>
+			</tr>
+		</table>
+		<button id="start" onclick="watchStart()">start</button>
+		<button id="stop" onclick="watchStop()">Stop</button>
+		<button id="reset" onclick="watchReset()">Reset</button>
+	</center>
+	<div class="fact"><img src="https://cdn2.scratch.mit.edu/get_image/gallery/28157581_170x100.png" style="padding: 20px;">
+	<p>Time passes slower the faster you move.</p></div>
+<script type="text/javascript" src="reminder.js"></script>
+</body>
+</html>
